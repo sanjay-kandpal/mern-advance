@@ -15,6 +15,11 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <ErrorPage />
   },
+  {
+    path: '/shop',
+    // element: ,
+    errorElement: <ErrorPage />
+  },
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

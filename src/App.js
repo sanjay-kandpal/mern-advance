@@ -1,5 +1,7 @@
+import { Fragment } from "react";
 import Directory from "./directory/Directory_component";
-
+import logo from './assets/logo.svg';
+import { Link } from "react-router-dom";
 const App = () => {
   const items= [
     {
@@ -30,7 +32,14 @@ const App = () => {
     }
   ];
   return (
-    <Directory items={items} />
+    <Fragment>
+     <header>
+      <img src={logo} alt="logo" />
+      <Link to="/shop"><h1>Shop</h1></Link>
+     </header>
+     <Directory items={items} />
+    </Fragment>
+    
   );
 }
 

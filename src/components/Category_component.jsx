@@ -4,7 +4,7 @@ const Category = ({item}) =>{
     return(
         <div className="Card">
         <div className="image-container">
-         <img src={item.img} className="card-background" />
+         <img src={item.img} className="card-background" alt={item.id} />
         </div>
         <div className="component">     
           <span className="inner-text">{item.id}</span>
